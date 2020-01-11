@@ -78,9 +78,11 @@ class Timezone extends Field
 
     public function getTimezoneOptions() {
         return array_map(function($tz) {
+            $date = (new \DateTime('now',new \DateTimeZone($tz)));
+            $name = str_replace('_',' ',$date->format('e'));
             return [
                 'value'=>$tz,
-                'label'=>$tz
+                'label'=>$name.' '.$date->format('(P)')
             ];
         },timezone_identifiers_list());
     }
