@@ -1,0 +1,40 @@
+{
+    "name": "coxeh/timezone-select-field",
+    "description": "Select a timezone",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "timezone select field"
+    ],
+    "support": {
+        "docs": "https://github.com/coxeh/timezone-select-field/blob/master/README.md",
+        "issues": "https://github.com/coxeh/timezone-select-field/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Carl Glaysher",
+            "homepage": "https://github.com/coxeh"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "coxeh\\timezoneselectfield\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Timezone Select Field",
+        "handle": "timezone-select-field",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/coxeh/timezone-select-field/master/CHANGELOG.md",
+        "class": "coxeh\\timezoneselectfield\\TimezoneSelectField"
+    }
+}
